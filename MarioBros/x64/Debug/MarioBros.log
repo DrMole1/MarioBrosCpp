@@ -1,22 +1,22 @@
 ﻿  MarioBros.cpp
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(62,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
 C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(63,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(72,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(64,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
 C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(73,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(77,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(74,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
 C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(78,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(87,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(79,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
 C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(88,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(129,58): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(133,34): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(134,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(138,34): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(139,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(143,34): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(144,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(148,34): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(149,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(256,15): warning C4244: 'return' : conversion de 'WPARAM' en 'int', perte possible de données
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(264,13): warning C4101: 'msg' : variable locale non référencée
-C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(453): warning C4715: 'WndProc' : les chemins de contrôle ne retournent pas tous une valeur
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(89,37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(130,58): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(134,34): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(135,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(139,34): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(140,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(144,34): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(145,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(149,34): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(150,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(297,15): warning C4244: 'return' : conversion de 'WPARAM' en 'int', perte possible de données
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(339,13): warning C4101: 'msg' : variable locale non référencée
+C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\MarioBros\MarioBros.cpp(529): warning C4715: 'WndProc' : les chemins de contrôle ne retournent pas tous une valeur
   MarioBros.vcxproj -> C:\Users\basti\Desktop\Ludus\Algo\C++\MarioBros\x64\Debug\MarioBros.exe

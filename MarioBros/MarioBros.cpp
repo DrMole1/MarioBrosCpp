@@ -1,6 +1,7 @@
 #include "framework.h"
 #include "MarioBros.h"
 
+
 // ====================== DRAW METHODS ======================
 
 
@@ -200,6 +201,45 @@ int cptMBloc = 0;
 
 // ==========================================================
 
+/*class CGameManager
+{
+private:
+    STEAM_CALLBACK(CGameManager, OnGameOverlayActivated, GameOverlayActivated_t);
+    void OnGetNumberOfCurrentPlayers(NumberOfCurrentPlayers_t* pCallback, bool bIOFailure);
+    CCallResult< CGameManager, NumberOfCurrentPlayers_t > m_NumberOfCurrentPlayersCallResult;
+
+public:
+    void GetNumberOfCurrentPlayers();
+};
+
+void CGameManager::OnGameOverlayActivated(GameOverlayActivated_t* pCallback)
+{
+    if (pCallback->m_bActive)
+        printf("Steam overlay now active\n");
+    else
+        printf("Steam overlay now inactive\n");
+}
+
+// Make the asynchronous request to receive the number of current players.
+void CGameManager::GetNumberOfCurrentPlayers()
+{
+    printf("Getting Number of Current Players\n");
+    SteamAPICall_t hSteamAPICall = SteamUserStats()->GetNumberOfCurrentPlayers();
+    m_NumberOfCurrentPlayersCallResult.Set(hSteamAPICall, this, &CGameManager::OnGetNumberOfCurrentPlayers);
+}
+
+// Called when SteamUserStats()->GetNumberOfCurrentPlayers() returns asynchronously, after a call to SteamAPI_RunCallbacks().
+void CGameManager::OnGetNumberOfCurrentPlayers(NumberOfCurrentPlayers_t* pCallback, bool bIOFailure)
+{
+    if (bIOFailure || !pCallback->m_bSuccess)
+    {
+        printf("NumberOfCurrentPlayers_t failed!\n");
+        return;
+    }
+
+    printf("Number of players currently playing: %d\n", pCallback->m_cPlayers);
+}*/
+
 
 // Signature of WndProc
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -253,7 +293,42 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, PSTR, INT iCmdShow)
     }
 
     GdiplusShutdown(gdiplusToken);
+
     return msg.wParam;
+}
+
+static int RealMain(const char* pchCmdLine, HINSTANCE hInstance, int nCmdShow)
+{
+
+    if (SteamAPI_RestartAppIfNecessary(k_uAppIdInvalid))
+    {
+        // if Steam is not running or the game wasn't started through Steam, SteamAPI_RestartAppIfNecessary starts the 
+        // local Steam client and also launches this game again.
+
+        return EXIT_FAILURE;
+    }
+
+    // Initialize SteamAPI, if this fails we bail out since we depend on Steam for lots of stuff.
+    // You don't necessarily have to though if you write your code to check whether all the Steam
+    // interfaces are NULL before using them and provide alternate paths when they are unavailable.
+    //
+    // This will also load the in-game steam overlay dll into your process.  That dll is normally
+    // injected by steam when it launches games, but by calling this you cause it to always load,
+    // even when not launched via steam.
+    if (!SteamAPI_Init())
+    {
+        return EXIT_FAILURE;
+    }
+    
+    const char* name = SteamFriends()->GetPersonaName();
+
+    printf(name);
+
+    //CGameManager gameManager;
+
+    //gameManager.GetNumberOfCurrentPlayers();
+
+    SteamAPI_Shutdown();
 }
 
 // Update the window for every proc
@@ -270,6 +345,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     switch (message)
     {
         case WM_CREATE:   // START SECTION
+     
             // Start the timer.  
             SetTimer(hWnd, idTimer = 1, 10, NULL);
             return 0;

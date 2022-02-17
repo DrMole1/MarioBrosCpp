@@ -19,6 +19,9 @@
 #include <gdiplus.h>
 #include <array>
 #include <string>
+#include "steam/steam_api.h"    // Include API STEAM
+#include <direct.h>
+//#include "steam/stdafx.h"
 using namespace Gdiplus;
 #pragma comment (lib,"Gdiplus.lib")
 // Headers
