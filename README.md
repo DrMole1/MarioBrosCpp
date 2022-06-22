@@ -1,3 +1,4 @@
 # MarioBrosCpp
-Flèches directionnelles pour avancer ou reculer.
-Flèche du haut pour sauter.
+
+It is a little project developed during my free time.
+It's a sort of MarioBros, only developed in C++.
